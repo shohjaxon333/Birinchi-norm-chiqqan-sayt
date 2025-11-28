@@ -1,0 +1,49 @@
+/* Baza shrift o'lchami 1px — 1rem = 1px */
+:root { font-size: 1px; }
+
+*,
+*::before,
+*::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body { height: 100%; }
+
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg,#f4f6fb 0%, #ffffff 100%);
+  color: #0b1220;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Konteyner */
+.container {
+  max-width: 1200rem; /* 1200px */
+  margin: 0 auto;
+  padding: 32rem; /* 32px */
+}
+
+/* Header */
+.site-header { border-bottom: 1rem solid rgba(15,22,40,0.05); background: #ffffff; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; padding: 20rem 0; }
+
+.logo { font-weight: 700; font-size: 18rem; letter-spacing: 1rem; } /* 18px */
+.nav .menu { display: flex; gap: 18rem; list-style: none; }
+.nav .menu li { font-size: 12rem; opacity: .9; cursor: default; }
+
+/* Hero */
+.hero { padding: 40rem 0; text-align: left; }
+.hero-inner h1 { font-size: 32rem; margin-bottom: 8rem; } /* 32px */
+.lead { font-size: 14rem; color: #414856; margin-bottom: 24rem; }
+
+/* Cards */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220rem, 1fr)); gap: 20rem; }
+.card {
+  background: #fff;
+  padding: 20rem;
+  border-radius: 12rem;
+  box-shadow: 0 6rem 18rem rgba(12,20,50,0.06);
+}
+.card h2 { font-size: 16rem; margin-bottom: 6rem; }
+.card p { font-size: 11rem; color: #646b78; }
+
+/* Footer */
+.site-footer { border-top: 1rem solid rgba(15,22,40,0.04); padding: 18rem 0; text-align: center; font-size: 11rem; color: #7a8190; }
